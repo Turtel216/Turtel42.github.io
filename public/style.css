@@ -657,10 +657,6 @@ html {
   background-color: rgb(2 87 122 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/public\/cs-background\.jpg\'\)\]{
-  background-image: url('./public/cs-background.jpg');
-}
-
 .bg-\[url\(\'cs-background\.jpg\'\)\]{
   background-image: url('cs-background.jpg');
 }
