@@ -586,6 +586,7 @@ html {
   margin-top: 7rem;
 }
 
+<<<<<<< HEAD
 .ml-auto{
   margin-left: auto;
 }
@@ -602,6 +603,8 @@ html {
   display: inline-block;
 }
 
+=======
+>>>>>>> 13475981dc93156e36e460ba2a5d64f6ebfa6c79
 .flex{
   display: flex;
 }
@@ -618,6 +621,7 @@ html {
   height: 100%;
 }
 
+<<<<<<< HEAD
 .h-auto{
   height: auto;
 }
@@ -634,6 +638,8 @@ html {
   height: 16rem;
 }
 
+=======
+>>>>>>> 13475981dc93156e36e460ba2a5d64f6ebfa6c79
 .w-52{
   width: 13rem;
 }
@@ -642,6 +648,7 @@ html {
   width: 15rem;
 }
 
+<<<<<<< HEAD
 .w-7{
   width: 1.75rem;
 }
@@ -650,6 +657,8 @@ html {
   width: 20rem;
 }
 
+=======
+>>>>>>> 13475981dc93156e36e460ba2a5d64f6ebfa6c79
 .w-screen{
   width: 100vw;
 }
@@ -682,6 +691,7 @@ html {
   border-radius: 9999px;
 }
 
+<<<<<<< HEAD
 .rounded{
   border-radius: 0.25rem;
 }
@@ -691,6 +701,8 @@ html {
   border-bottom-left-radius: 1rem;
 }
 
+=======
+>>>>>>> 13475981dc93156e36e460ba2a5d64f6ebfa6c79
 .bg-background{
   --tw-bg-opacity: 1;
   background-color: rgb(1 48 63 / var(--tw-bg-opacity));
@@ -701,11 +713,14 @@ html {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-blue-700{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+=======
+>>>>>>> 13475981dc93156e36e460ba2a5d64f6ebfa6c79
 .bg-titles{
   --tw-bg-opacity: 1;
   background-color: rgb(2 87 122 / var(--tw-bg-opacity));
@@ -750,10 +765,13 @@ html {
   padding-left: 0.75rem;
 }
 
+<<<<<<< HEAD
 .pr-2{
   padding-right: 0.5rem;
 }
 
+=======
+>>>>>>> 13475981dc93156e36e460ba2a5d64f6ebfa6c79
 .pr-20{
   padding-right: 5rem;
 }
