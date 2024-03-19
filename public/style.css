@@ -546,6 +546,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.skill{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  padding: 0.125rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -640,6 +650,10 @@ html {
 
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -743,6 +757,10 @@ html {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
