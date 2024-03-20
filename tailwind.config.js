@@ -13,7 +13,9 @@ module.exports = {
         links: '#89d6fb'
       },
       fontFamily: {
-        body: ['Inter']
+        body: ['Inter'],
+        tech: ['Share Tech Mono'
+        ]
       }
     },
   },
