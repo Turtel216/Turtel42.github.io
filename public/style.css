@@ -549,13 +549,12 @@ video {
 }
 
 .skill{
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  display: inline-block;
+  border-start-start-radius: 0.25rem;
+  border-end-start-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  padding: 0.125rem;
+  padding: 0.25rem;
 }
 
 .card{
@@ -809,6 +808,10 @@ html {
 
 .pt-5{
   padding-top: 1.25rem;
+}
+
+.pl-1{
+  padding-left: 0.25rem;
 }
 
 .text-left{

@@ -4,7 +4,7 @@
 @tailwind base;
 
 .skill{
-    @apply bg-black rounded-l p-0.5 ml-1 mr-1;
+    @apply bg-black rounded-s p-1 inline-block;
 }
 
 .card {
