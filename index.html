@@ -13,26 +13,58 @@
     alert("This Web Page is still being worked on. The layout and content is not final. Functionality for mobile users is very limited as of now");
 </script>
 
-<header class="fixed">
-    <nav class="sticky bg-black text-text w-screen h-10 text-center rounded-full">
-        <div class="font-bold">
-            <div class="pt-2 ml-1 mr-1 flex justify-between">
-                <a class="rounded-full hover:bg-gray-600 hover:cursor-pointer" href="#General_info">General
-                    Information</a>
-                <a class="rounded-full hover:bg-gray-600 hover:cursor-pointer " href="#Education">Education</a>
-                <a class="rounded-full hover:bg-gray-600 hover:cursor-pointer" href="#Experience">Experience</a>
-                <a class="rounded-full hover:bg-gray-600 hover:cursor-pointer" href="#Research">Research</a>
-                <a class="rounded-full hover:bg-gray-600 hover:cursor-pointer" href="#Projects">Projects</a>
-                <a class="rounded-full hover:bg-gray-600 hover:cursor-pointer" href="#Skills">Skills</a>
-                <a class="rounded-full hover:bg-gray-600 hover:cursor-pointer" href="#Contact">Contact</a>
-                <a class="rounded-full hover:bg-gray-600 hover:cursor-pointer" href="#Other">Other</a>
-            </div>
+
+
+<header class="fixed top-0 w-full">
+    <!-- Main navigation container -->
+    <nav class="flex flex-wrap items-center justify-between p-3 bg-white">
+        <div class="flex md:hidden">
+            <button id="hamburger">
+            <img class="toggle block" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
+            <img class="toggle hidden" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
+            </button>
+        </div>
+        <div
+            class="toggle hidden w-full md:w-auto md:flex text-center text-bold mt-5 md:mt-0 border-t-2 border-blue-900 md:border-none">
+            <a href="#General_info"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">General info
+            </a>
+            <a href="#Education"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Education
+            </a>
+            <a href="#Experience"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Experience
+            </a>
+            <a href="#Research"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Research
+            </a>
+            <a href="#Projects"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Projects
+            </a>
+            <a href="#Skills"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Skills
+            </a>
+            <a href="#Contact"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Contact
+            </a>
+            <a href="#Other"
+                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Other
+            </a>
         </div>
     </nav>
+    <script>
+        document.getElementById("hamburger").onclick = function toggleMenu() {
+            const navToggle = document.getElementsByClassName("toggle");
+            for (let i = 0; i < navToggle.length; i++) {
+            navToggle.item(i).classList.toggle("hidden");
+            }
+        };
+    </script>
 </header>
+  
 
 <div class="bg-[url('cs-background.jpg')] bg-contain bg-no-repeat bg-repeat-x bg-blend-screen h-full">
-    <div class="px-20 py-20 flex justify-items-center items-center">
+    <div class="px-20 py-20 sm:flex-wrap md:flex justify-items-center items-center">
         <img class="md: object-scale-down h-60 w-60" src="public/Icon2.png">
         <div class="text-nowrap pl-3">
             <h1 class="sm:text-1xl md:text-4xl text-text">Dimitrios Papakonstantinou</h1>
@@ -45,7 +77,7 @@
 
 <!-- General information -->
 <div id="General_info"></div>
-<div class="mt-28 text-nowrap text-text text-center">
+<div class="mt-28 text-wrap text-text text-center">
     <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
         <h1>General Information</h1>
     </div>
@@ -58,7 +90,7 @@
 
 <!-- Education -->
 <div id="Education"></div>
-<div class="mt-28 text-nowrap text-text text-center">
+<div class="mt-28 text-wrap text-text text-center">
     <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
         <h1>Education</h1>
     </div>
@@ -70,7 +102,7 @@
 
 <!-- Experience -->
 <div id="Experience"></div>
-<div class="mt-28 text-nowrap text-text text-center">
+<div class="mt-28 text-wrap text-text text-center">
     <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
         <h1>Experience</h1>
     </div>
@@ -81,18 +113,18 @@
 
 <!-- Research -->
 <div id="Research"></div>
-<div class="mt-28 text-nowrap text-text text-center">
+<div class="mt-28 text-wrap text-text text-center">
     <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
         <h1>Research</h1>
     </div>
-    <p class="pt-5 pl-20  pr-20 ml-72 mr-72"> Currently researching Graph neural networks(GNN) in collaboration with the
+    <p class="pt-5"> Currently researching Graph neural networks(GNN) in collaboration with the
         Operational Research Analysis Team of University Studies(ORATUS) </p>
 </div>
 
 
 <!-- Projects -->
 <div id="Projects"></div>
-<div class="mt-28 text-nowrap text-text text-center">
+<div class="mt-28 text-wrap text-text text-center">
     <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
         <h1>Projects</h1>
     </div>
@@ -133,17 +165,15 @@
 </div>
 <!-- Skills -->
 <div id="Skills"></div>
-<div class="mt-28 text-nowrap text-white text-center">
+<div class="mt-28 text-wrap text-white text-center">
     <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
         <h1>Skills</h1>
     </div>
     <div class=" pt-5 flex justify-center">
         <div class="text-left">
-            <p>General skills:<span class="skill pl-1">Git</span></p>
-            <p>Programming Languages: <span class="skill pl-1">Java</span> <span class="skill">Go</span> <span class="skill">Javascript/Typescript</span>
-                <span class="skill">C</span></p>
-            <p>Frameworks:<span class="skill pl-1">Spring Boot</span> <span class="skill">React</span> <span class="skill">Express</span>
-            </p>
+            <p>General skills:<span class="skill pl-1">Fast learner</span></p>
+            <p>Technical skkils: <span class="skill pl-1">Java</span> <span class="skill">Go</span> <span class="skill">Javascript/Typescript</span>
+                <span class="skill">C</span><span class="skill pl-1">Spring Boot</span> <span class="skill">React</span> <span class="skill">Express</span></p>
         </div>
     </div>
 </div>
@@ -151,7 +181,7 @@
 
 <!-- Contact -->
 <div id="Contact"></div>
-<div class="mt-28 text-nowrap text-text text-center">
+<div class="mt-28 text-wrap text-text text-center">
     <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
         <h1>Contact</h1>
     </div>
