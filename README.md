@@ -6,4 +6,4 @@ This Repository is used for my Home page [dimitrios-papakonstantinou.com](https:
 
 ### Note 
 
-For anyone interested the web site is build using **HTML5**, **Tailwindcss** and **ReactJS**(not yet). The backend and web hosting is handled by GitHub Pages
+For anyone interested the web site is build using **HTML5**, **Tailwindcss**. The backend and web hosting is handled by GitHub Pages
