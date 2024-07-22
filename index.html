@@ -7,228 +7,172 @@
     <title>Dimitrios-Papakonstantinou</title>
     <link href="public/style.css" rel="stylesheet">
 </head>
-<body class="font-body bg-background !scroll-smooth">
+  <body class="bg-gray-50 text-gray-800 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600">
 
-<script>
-    alert("This Web Page is still being worked on. The layout and content is not final. Functionality for mobile users is very limited as of now");
-</script>
-
-
-
-<header class="fixed top-0 w-full">
-    <!-- Main navigation container -->
-    <nav class="flex flex-wrap items-center justify-between p-3 bg-black">
-        <div class="flex md:hidden">
-            <button id="hamburger">
-            <svg class="toogle block" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
-            style="fill:#FFFFFF;">
-            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
-            </svg> 
-            </button>
-        </div>
-        <div
-            class="toggle hidden w-full md:w-auto md:flex text-center text-bold mt-5 md:mt-0 border-t-2 border-blue-900 md:border-none">
-            <a href="#General_info"
-                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">General info
-            </a>
-            <a href="#Education"
-                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Education
-            </a>
-            <a href="#Experience"
-                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Experience
-            </a>
-            <a href="#Research"
-                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Research
-            </a>
-            <a href="#Projects"
-                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Projects
-            </a>
-            <a href="#Skills"
-                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Skills
-            </a>
-            <a href="#Contact"
-                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Contact
-            </a>
-            <a href="#Other"
-                class="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">Other
-            </a>
-        </div>
-    </nav>
     <script>
-        document.getElementById("hamburger").onclick = function toggleMenu() {
-            const navToggle = document.getElementsByClassName("toggle");
-            for (let i = 0; i < navToggle.length; i++) {
-            navToggle.item(i).classList.toggle("hidden");
-            }
-        };
+    alert("This Web Page is still being worked on. The layout and content is not final. Functionality for mobile users is very limited as of now");
+  </script>
+
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Dimitrios Papakonstantinou</h1>
+            <nav class="space-x-4">
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#education" class="hover:underline">Education</a>
+                <a href="#projects" class="hover:underline">Projects</a>
+                <a href="#experience" class="hover:underline">Experience</a>
+                <a href="#tech-stack" class="hover:underline">Tech Stack</a>
+                <a href="#social-media" class="hover:underline">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
+        <!-- About Section -->
+        <section id="about" class="my-8 bg-white p-6 shadow rounded-lg">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p class="text-lg leading-relaxed">
+                Hello! I'm Dimitrios Papakonstantinou, systems programmer and backend engineer. My main intrests lay in Compiler design and construction</p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="my-8 bg-white p-6 shadow rounded-lg">
+            <h2 class="text-2xl font-bold mb-4">Education</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li class="text-lg leading-relaxed">
+                    <strong>Bachelor of Science in Informatics</strong> - University of Western Machedonia, 2021 - now
+                </li>
+                <li class="text-lg leading-relaxed">
+                    <strong>High School Diploma</strong> - General Lykio Feron, 2020
+                </li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="my-8 bg-white p-6 shadow rounded-lg">
+            <h2 class="text-2xl font-bold mb-4">Coding Projects</h2>
+            <ul class="space-y-4">
+                <li class="bg-gray-50 p-6 shadow rounded-lg">
+                    <h3 class="text-xl font-semibold">Project Name <i class="fas fa-code text-blue-500"></i></h3>
+                    <p class="text-lg leading-relaxed">Description of the project, technologies used, and the purpose of the project.</p>
+                    <a href="[Project Link]" class="text-blue-500 hover:underline">View Project</a>
+                </li>
+                <!-- Repeat for more projects -->
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="my-8 bg-white p-6 shadow rounded-lg">
+            <h2 class="text-2xl font-bold mb-4">Experience</h2>
+            <ul class="space-y-4">
+                <li class="bg-gray-50 p-6 shadow rounded-lg">
+                    <h3 class="text-xl font-semibold">Job Title <i class="fas fa-briefcase text-blue-500"></i></h3>
+                    <p class="text-lg leading-relaxed"><strong>Company Name</strong> - [Year]</p>
+                    <p class="text-lg leading-relaxed">Description of your role and responsibilities.</p>
+                </li>
+                <!-- Repeat for more experiences -->
+            </ul>
+        </section>
+
+      <!-- Tech Stack & Tools Section -->
+        <section id="tech-stack" class="my-8 bg-white p-6 shadow rounded-lg">
+            <h2 class="text-2xl font-bold mb-4">Tech Stack & Tools</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fab fa-html5 text-orange-500 text-4xl"></i>
+                    <span>C++</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fab fa-css3-alt text-blue-500 text-4xl"></i>
+                    <span>Go</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fab fa-js-square text-yellow-500 text-4xl"></i>
+                    <span>Java</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fab fa-react text-blue-400 text-4xl"></i>
+                    <span>C</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fab fa-node-js text-green-500 text-4xl"></i>
+                    <span>Javascript</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>Spring</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>React</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>Node.JS</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>NEXT.JS</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>Tailwindcss</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>postgres</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>mongodb</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>Postman</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>Linux</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <i class="fas fa-database text-blue-800 text-4xl"></i>
+                    <span>Nvim</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Links Section -->
+        <section id="social-media" class="my-8 bg-white p-6 shadow rounded-lg">
+            <h2 class="text-2xl font-bold mb-4">Connect with Me</h2>
+            <div class="flex space-x-4 text-2xl">
+                <a href="https://www.linkedin.com/in/dimitrios-papakonstantinou-44a7672b3" class="text-blue-500 hover:text-blue-600"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="https://github.com/Turtel216" class="text-gray-900 hover:text-gray-700"><i class="fab fa-github"></i>Github</a>
+                <a href="https://twitter.com/turtel42" class="text-blue-400 hover:text-blue-500"><i class="fab fa-twitter"></i>Twitter</a>
+                <!-- Add more social media links as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-6 mt-10">
+        <div class="max-w-7xl mx-auto text-center">
+            &copy; <span id="currentYear"></span> Dimitrios Papakonstantinou. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
-</header>
-  
-
-<div class="bg-[url('cs-background.jpg')] bg-contain bg-no-repeat bg-repeat-x bg-blend-screen h-full">
-    <div class="px-20 py-20 sm:flex-wrap md:flex justify-items-center items-center">
-        <img class="md: object-scale-down h-60 w-60" src="public/Icon2.png">
-        <div class="text-nowrap pl-3">
-            <h1 class="sm:text-1xl md:text-4xl text-text">Dimitrios Papakonstantinou</h1>
-            <h2 class="sm: text-lg md:text-2xl text-subtext">Computer Science Student at UOWM</h2>
-            <h3 class="sm: text-lg m:text-2xl text-subtext">Software Engineer and Research Assist</h3>
-        </div>
-    </div>
-</div>
-
-
-<!-- General information -->
-<div id="General_info"></div>
-<div class="mt-28 text-wrap text-text text-center">
-    <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
-        <h1>General Information</h1>
-    </div>
-    <p class="pt-5"><span class="font-bold">Born</span> 16/10/2001 Neustadt Germany</p>
-    <p><span class="font-bold">Citizenship</span> both German and Greek</p>
-    <p><span class="font-bold">Languages</span>: German Greek English</p>
-    <p></p>
-</div>
-
-
-<!-- Education -->
-<div id="Education"></div>
-<div class="mt-28 text-wrap text-text text-center">
-    <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
-        <h1>Education</h1>
-    </div>
-    <p class="pt-5"> Currently pursuing a Bachelor's degree in <a class="text-links" href="https://cs.uowm.gr/">Computer
-        Science</a> at the <a class="text-links" href="https://www.uowm.gr/en/">University of Western Macedonia</a></p>
-    <p>Went to Geniko Lykio Feron(Natural Sciences direction) and finished with average grade of 19.2</p>
-</div>
-
-
-<!-- Experience -->
-<div id="Experience"></div>
-<div class="mt-28 text-wrap text-text text-center">
-    <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
-        <h1>Experience</h1>
-    </div>
-    <p class="pt-5"> Currently employed at the laboratory environmental technology as assist researcher, computer
-        programmer and data analyst </p>
-</div>
-
-
-<!-- Research -->
-<div id="Research"></div>
-<div class="mt-28 text-wrap text-text text-center">
-    <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
-        <h1>Research</h1>
-    </div>
-    <p class="pt-5"> Currently researching Graph neural networks(GNN) in collaboration with the
-        Operational Research Analysis Team of University Studies(ORATUS) </p>
-</div>
-
-
-<!-- Projects -->
-<div id="Projects"></div>
-<div class="mt-28 text-wrap text-text text-center">
-    <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
-        <h1>Projects</h1>
-    </div>
-
-    <div class="flex justify-center justify-items-stretch">
-        <div class="flex justify-center text-wrap">
-            <div class="card">
-                <div class="title">
-                    <h2 class="title">Cloud-Vendor-REST-API</h2>
-                </div>
-                <div class="description">
-                    <p class="description">This is a small and simple implementation of a CloudVendorAPI using Java's
-                        Spring Boot and MySQL.</p>
-                </div>
-                <div class="source">
-                    <a class="source" href="https://github.com/Turtel216/Cloud-Vendor-REST-API">SOURCE CODE</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="ml-4 flex justify-center text-wrap">
-            <div class="card">
-                <div class="title">
-                    <h2 class="title">Cloud-Vendor-REST-API</h2>
-                </div>
-                <div class="description">
-                    <p class="description">This is a small and simple implementation of a CloudVendorAPI using Java's
-                        Spring Boot and MySQL.</p>
-                </div>
-                <div class="source">
-                    <a class="source" href="https://github.com/Turtel216/Cloud-Vendor-REST-API">SOURCE CODE</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</div>
-<!-- Skills -->
-<div id="Skills"></div>
-<div class="mt-28 text-wrap text-white text-center">
-    <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
-        <h1>Skills</h1>
-    </div>
-    <div class=" pt-5 flex justify-center">
-        <div class="text-left">
-            <p>General skills:<span class="skill pl-1">Fast learner</span></p>
-            <p>Technical skkils: <span class="skill pl-1">Java</span> <span class="skill">Go</span> <span class="skill">Javascript/Typescript</span>
-                <span class="skill">C</span><span class="skill pl-1">Spring Boot</span> <span class="skill">React</span> <span class="skill">Express</span></p>
-        </div>
-    </div>
-</div>
-
-
-<!-- Contact -->
-<div id="Contact"></div>
-<div class="mt-28 text-wrap text-text text-center">
-    <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
-        <h1>Contact</h1>
-    </div>
-    <div class="bg-blue-700 w-80 mt-5 mr-auto ml-auto h-60 rounded shadow">
-        <div class="pt-5">
-            <p>
-                <svg class="w-7 inline-block mr-1 pr-2" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <g data-name="7-Email-Arrow up">
-                        <path d="M29 4H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h13v-2H3a1 1 0 0 1-1-1V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23V17h2V7a3 3 0 0 0-3-3zM16 14.77 3.72 6h24.56z"/>
-                        <path d="m24.29 18.29-4 4 1.41 1.41 2.3-2.29V29h2v-7.59l2.29 2.29 1.41-1.41-4-4a1 1 0 0 0-1.41 0z"/>
-                    </g>
-                </svg>
-                papakonstantinou.dm@gmail.com
-            </p>
-        </div>
-        <div class="pt-5">
-            <a class="text-links" href="www.linkedin.com/in/dimitrios-papakonstantinou-44a7672b3">
-                <svg class=" w-7 inline-block mr-1 pr-2" height="24" viewBox="0 0 24 24" width="24"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-                LinkedIn</a>
-        </div>
-        <div class="pt-5">
-            <a class="text-links" href="www.linkedin.com/in/dimitrios-papakonstantinou-44a7672b3">
-                <svg class=" w-7 inline-block mr-1 pr-2" height="24" viewBox="0 0 24 24" width="24"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                GitHub</a>
-        </div>
-    </div>
-</div>
-
-
-<!-- Other -->
-<div id="Other"></div>
-<div class="mt-28 text-nowrap text-text text-center mb-20">
-    <div class="bg-titles m-auto rounded-full overflow-hidden shadow text-center w-52 text-4xl">
-        <h1>Other</h1>
-    </div>
-    <p class="pt-5"> Currently studying at the University of Western Macedonia</p>
-</div>
-
-
 </body>
-
 </html>
